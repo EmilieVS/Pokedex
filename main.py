@@ -1,15 +1,16 @@
-import requests
+import json
 
-jsonURL = ('https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json')
-response = requests.get(jsonURL)
-data = response.json()
+def readJSON():
+    try:
+        with open('pokedex.json', 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            print(data)
+        
+    except FileNotFoundError:
+        print('Sorry, file not found')
+    
 
-
-def getPokemon():
-    print(data)
-
-
-getPokemon()
+readJSON()
 
 
         
