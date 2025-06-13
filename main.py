@@ -24,7 +24,7 @@ def countPokemon():
             print(f"Il ya {numOfPokemon} Pokémons dans le Pokédex")
             
 
-countPokemon()
+#countPokemon()
 
 #Exercice wants me to do the same function but using a loop
 
@@ -38,8 +38,33 @@ def countLoopPokemon():
 
 #countLoopPokemon()
 
+# Function to count Pokemons over 10kg
 
-    
+def pokemonsWeight():
+    count = 0
 
+    for pokemon in pokeData['pokemon']:
+        weight = pokemon['weight']
+        pokeWeight = float(weight.replace("kg",''))
 
         
+        if pokeWeight > 10.0:
+            count+=1
+
+    print(f"Il y a {count} Pokémons qui pèsent plus de 10 kg")
+
+
+#pokemonsWeight()
+
+
+#Function to sort them by weight
+
+def sortPokemon():
+#getting the list sorted : "key" works with functions only so using lambda(anonymous function)
+    pokeData['pokemon'].sort(key = lambda pokemon:float(pokemon['weight'].replace("kg",'')))
+      
+    for pokemon in pokeData['pokemon']:
+         print(f"{pokemon['name']} : {pokemon['weight']}")
+        
+
+sortPokemon()
