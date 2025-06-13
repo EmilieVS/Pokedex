@@ -14,13 +14,32 @@ def readJSON():
         print('Sorry, file not found')
 
     
+#readJSON()
+
+# function to count the number of Pokemon
+def countPokemon():
+    with open('pokedex.json', 'r') as jsonFILE:
+            data = json.load(jsonFILE) 
+            #print(json.dumps(data, indent=4))
+            numOfPokemon = len(data['pokemon']) # len function to get the number of element
+            print(f"Il ya {numOfPokemon} Pokémons dans le pokédex")
+            
+
+#countPokemon()
+
+#Exercice wants me to do the same function but using a loop
+
+def countLoopPokemon():
+     with open('pokedex.json', 'r') as jsonFILE:
+            data = json.load(jsonFILE)
+            count = 0
+            for id in data['pokemon']:
+                count+=1
+               
+            print(f"Il y a {count} Pokémons")
 
 
-# Test: working ok
-readJSON()
-
-
-
+countLoopPokemon()
 
 
 
