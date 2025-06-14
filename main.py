@@ -77,8 +77,7 @@ class Pokemon:
            return None
 
 
-
-#On instancie un objet pokemon pour chaque entrée du JSON
+#Creating(/instanciating) a pokemon object for each one in the JSON
 def pokedex():
      for pokemon in pokeData['pokemon']:
           newPokemon = Pokemon(pokemon)
