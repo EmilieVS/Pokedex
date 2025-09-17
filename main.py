@@ -1,4 +1,7 @@
 import json
+from fastapi import FastAPI
+
+app = FastAPI()
 
 # Creating function to get the file I imported previously and parse it. 
 def readJSON():
@@ -10,8 +13,16 @@ def readJSON():
     
     except FileNotFoundError:
         print('Sorry, file not found')
+        return {"pokemon": []}
 
 pokeData = readJSON()  
+
+@app.get("/pokemons")
+async def getPokemon():
+    return pokeData["pokemon"]
+
+
+
 
 # function to count the number of Pokemon
 def countPokemon():
@@ -89,4 +100,5 @@ def pokedex():
           elif evolution == None:
                print(f"{newPokemon.name} n'a pas d'évolution")
 
-pokedex()
+# pokedex()
+
