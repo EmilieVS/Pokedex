@@ -2,7 +2,7 @@
 
 >👩‍💻 Individual project  
 >🏃 Duration : 1 week  
->🏄 Theme : Parse Pokémon data and build a simple API — “Gotta catch 'em all!”
+>🏄 Theme : Parse Pokémon data — “Gotta catch 'em all!”
 ________________________________________________________________________________________
 ># 📚 Stack
 
