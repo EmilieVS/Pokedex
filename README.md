@@ -69,5 +69,5 @@ Example: Bulbasaur → Ivysaur → Venusaur
 
 Build a small Pokedex interface or output that allows searching for a Pokémon and viewing all its details.
 
-(Optional) Use a GUI library like Tkinter, JavaFX, or Swing if you’re implementing this in Java.
+(Optional) Use a GUI library like JavaFX, or Swing if you’re implementing this in Java.
 ________________________________________________________________________________________
