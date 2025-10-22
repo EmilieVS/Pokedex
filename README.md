@@ -35,11 +35,9 @@ Work on data parsing, nested data structures, and loops by displaying statistics
 
 Load and parse the JSON dataset
 
-Display general statistics (e.g., number of Pokémon)
-
 Filter Pokémon based on criteria (e.g., weight > 10 kg)
 
-Sort Pokémon by weight
+Sort Pokémon 
 
 Display possible evolutions for a given Pokémon
 ⚙️ This project focuses on backend logic and data manipulation rather than UI.
